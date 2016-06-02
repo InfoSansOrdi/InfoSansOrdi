@@ -11,4 +11,10 @@ Nos objectifs sont :
 
 Nous sommes des hommes et des femmes, des chercheurs et des enseignants, et des enseignants-chercheurs.
 
-Notre première journée de travail a eu lieu le 1er avril 2016 à la MMI de Lyon.
+Notre liste de diffusion est ici :
+https://sympa.inria.fr/sympa/info/infosansordi
+
+Nous sommes un groupe de travail de la Société Informatique de France (SIF)
+
+Notre première journée de travail a eu lieu le 1er avril 2016 à la Maison des Mathématiques et de l'Informatique (MMI) de Lyon.
+
