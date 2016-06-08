@@ -1,6 +1,9 @@
 # InfoSansOrdi
 
-Notre groupe s'intéresse aux activités d'informatique sans ordinateur (aussi appellée sciences manuelles du numérique ou informatique débranchée) comme moyen de diffusion de la science informatique auprès du grand public et des scolaires.
+Notre groupe s'intéresse aux activités d'informatique sans ordinateur
+(aussi appellée sciences manuelles du numérique ou informatique
+débranchée) comme moyen de diffusion de la science informatique
+auprès du grand public et des scolaires.
 
 Nos objectifs sont :
 - le recensement des ressources existantes ainsi que la production de nouvelles ressources ;
@@ -14,7 +17,10 @@ Nous sommes des hommes et des femmes, des chercheurs et des enseignants, et des 
 Notre liste de diffusion est ici :
 https://sympa.inria.fr/sympa/info/infosansordi
 
-Nous sommes un groupe de travail de la Société Informatique de France (SIF)
+Nous sommes un (tout jeune) groupe de travail de la Société Informatique de France (SIF)
 
-Notre première journée de travail a eu lieu le 1er avril 2016 à la Maison des Mathématiques et de l'Informatique (MMI) de Lyon.
+Notre première journée de travail a eu lieu le 1er avril 2016 à la
+Maison des Mathématiques et de l'Informatique (MMI) de Lyon, et la
+prochaine devrait avoir lieu en novembre prochain (plus d'infos à
+venir).
 
