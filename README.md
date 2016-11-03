@@ -20,7 +20,6 @@ https://sympa.inria.fr/sympa/info/infosansordi
 Nous sommes un (tout jeune) groupe de travail de la Société Informatique de France (SIF)
 
 Notre première journée de travail a eu lieu le 1er avril 2016 à la
-Maison des Mathématiques et de l'Informatique (MMI) de Lyon, et la
-prochaine devrait avoir lieu en novembre prochain (plus d'infos à
-venir).
+Maison des Mathématiques et de l'Informatique (MMI) de Lyon et la
+prochaine aura lieu le 21 novembre 2016 à la MMI.
 
