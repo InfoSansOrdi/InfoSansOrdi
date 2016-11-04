@@ -17,7 +17,11 @@ Nous sommes des hommes et des femmes, des chercheurs et des enseignants, et des 
 Notre liste de diffusion est ici :
 https://sympa.inria.fr/sympa/info/infosansordi
 
-Nous sommes un (tout jeune) groupe de travail de la Société Informatique de France (SIF)
+Nous sommes un (tout jeune) groupe de travail de la Société Informatique de
+France (SIF) mais pas seulement. InfoSansOrdi n'est pas du tout restreint à la
+SIF (d'ailleurs CSIRL/SMN est un projet né hors de tout cadre institutionnel
+académique avant d'être étiquetté). Le groupe est ouvert à toutes les personnes
+intéressées.
 
 Notre première journée de travail a eu lieu le 1er avril 2016 à la
 Maison des Mathématiques et de l'Informatique (MMI) de Lyon, et la
