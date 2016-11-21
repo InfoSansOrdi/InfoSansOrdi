@@ -1,0 +1,360 @@
+Réunion du 21 Novembre 2016 à Lyon
+
+* Participant.e.s
+Marie Duflot-Kremer, Nathalie Revol, Timothée Pecatte, ? (en stage
+avec Timothée), Sylvie Alayrangues, Natacha Portier, Yann Secq,
+Philippe Marquet, Martin Quinson, Jean-Marc Vincent, Anne Rasse,
+Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
+
+* Magie rebranchée par Christian Bernigaot IREM de Clermont
+- D'après la célèbre activité de CS unplugged.
+- Création d'une petite interface graphique, avec le module Kivy
+  https://kivy.org/ pour python (fonctionne sur tablette).
+- Elle s'organise en 4 phases : 
+    - le public choisit l'orientation des cartes,
+    - le magicien rajoute une ligne et une colonne supplémentaires (bit de parité),
+    - le public de retourne une carte, 
+    - et enfin le magicien retrouve la carte retournée.
+- Question : pourquoi Canopé voulait-il une version "branchée" ? La
+  manipulation de cartes est amusante, mais ça permet d'utiliser
+  l'activité avec un TBI, et de diffuser dans pleins de classes sans
+  faire des dizaines de kits de cartes.
+- L'activité a une semaine donc elle n'a pas encore été testée en
+  conditions réelles avec des jeunes
+- Discussion (initiée par JM) sur comment aller plus loin en montant
+  au dela de la 2D pour parler des distances de Hamming et des boules
+  dans des espaces de dimension supérieure à 2.
+
+* Extension de la magie de la parité (par Nathalie)
+** Matériel
+- Des cartes à jouer (ou des cartes binaires comme celles que Marie
+  utilise) et de la patafix pour coller au tableau
+** L'activité
+ Ça se joue à 2 magiciens contre le public qui prépare les cartes.
+ Les magiciens ne se parlent pas, ne se croisent même pas.
+- le public place 16 cartes dans un carré 4x4 en choisissant la face
+  visible de chaque carte
+- la première magicienne retourne une carte
+- Le public en change une au hasard
+- la seconde magicienne (qui n'a pas parlé avec la première) revient
+  trouver la carte changée par le public, et ça marche
+** Comment ça marche?
+- On dira qu'un carré 4x4 est une "situation valide" si le nombre de
+  cartes côté pile dans chacun des ensembles suivant est paire:
+  - les deux premières lignes (comptées ensemble)
+  - les lignes 2 et 3
+  - les colonnes 1 et 2
+  - les colonnes 2 et 3
+- La première magicienne cherche à former un mot valide, en inversant
+  la carte qui casse les contraintes.
+- Exemple de plateau aléatoire :
+  X X O X
+  O X X X   lignes 1 et 2 OK      (6 cartes X),
+  X O O X   lignes 2 et 3 pas bon (5 cartes X). Donc carte sur ligne 3.
+  O X O X
+ 
+  colonnes 1 et 2 pas bon (5 cartes X)
+  colonnes 2 et 3 OK      (4 cartes X). => Donc carte sur colonne 1.
+
+  Le problème est donc le X en (3,1)
+- Trick: si toutes les contraintes sont déjà respectées quand la
+  première magicienne arrive, soit elle pipote que c'est magique, y'a
+  rien à faire, soit elle inverse la carte en bas à droite qui ne sert
+  à rien.
+- Ensuite le public change qqch au hasard. Forcément, il casse le mot valide.
+- Ensuite quand la deuxième magicienne arrive, on regarde les
+  différentes contraintes deux par deux:
+  - D'abord les lignes pour trouver la ligne modifiée
+    - L12 nOK et L23  OK: le pb est ligne 1
+    - L12 nOK et L23 nOK: le pb est ligne 2 (c'est l'inclusion des deux groupes)
+    - L12  OK et L23 nOK: le pb est ligne 3
+    - L12  OK et L23  OK: le pb est ligne 4
+  - Idem sur les colonnes pour déterminer la colonne qui porte le problème
+  - Donc si les 4 contraintes sont OK, le public a retourné la 4x4
+    qui n'est dans aucune contrainte
+** Pourquoi ça marche?
+- Ma principale question est de savoir pourquoi je peux toujours réparer
+  les 4 contraintes en inversant au plus une carte.
+** Extension sympa
+- Jouer avec seulement 2x2 cartes, ce qui permet peut-être aux enfants
+  de comprendre ce qui se passe (mais comment?)
+* Code correcteur du plan de Fano (par Natacha)
+- C'est encore plus poussé pour parler de code correcteur d'erreurs
+- Ref: https://fr.wikipedia.org/wiki/Plan_de_Fano
+- Définitions sur la figure: 
+  - il y a 7 traits (fleur, nuage, coeur, carreau, pique, spiral, étoile)
+  - il y a 7 points (qui sont les points où 3 traits se rejoignent). 
+    On remarque que chaque trait a 3 points.
+  - On définit par "droite" un ensemble de 3 points qui partagent un symbole.
+  - On définit par "anti-droite" les groupes de 4 points qui sont le
+    complémentaire à 7 points à chaque droite
+** Vers un code correcteur (pas d'activité en lien pour l'instant)
+- Convention de codage sur 16 mots: 0000000 rien, 11111111 tout, plus
+  7 droites (coeur: 1100100) et 7 anti-droites (non-coeur: 0011011)
+  - Un mot sur 7 bits code un sous-ensemble des points mais tous les
+    mots ne sont pas valides: il faut soit 0 bits à 1, soit tous les
+    bits à 1, soit 3 bits à 1, soit 4 bits à 1.
+- On a 16 mots car chaque mot (parmi les 2^16) ajouté empêche 7 mots
+  dans le codage
+- Le truc c'est que si tu changes un bit à un élément de l'un des 16
+  mots, tu tombes sur quelque chose qui est à distance 1 de ce que je
+  viens de casser, et à distance au moins 2 de tout le reste
+- c'est la même idée qui fait le jeu du Dobble. Ce qu'on fait avec
+  Fano serait pareil avec le Dobble,  mais avec 8 points par droite au
+  lieu de 3. Cette activité serait pas pratique du tout à faire, du coup.
+  http://images.math.cnrs.fr/Dobble-et-la-geometrie-finie 
+** Le matériel
+- Les 7 cartes représentant chacune un point (donc avec les 3 symboles
+  des traits qui passent par ce point). Il faut toutes les cartes en double.
+** Activité prévue avec ce matériel
+- But: le public prépare 8 cartes, contenant un seul double, et deux
+  magiciens vont regarder chacun la moitié du tas, faire une "partie
+  de poker de télépathes", puis deviner la carte en double après
+  s'être montré au plus une carte.
+** Comment ça marche?
+- (on commence par vérifier que le public s'est pas gouré en mettant
+  les deux doubles ensembles dans l'un des deux jeux)
+- Chaque magicien cherche s'il a 3 cartes avec le même symbole.
+- Si un seul des deux a une telle droite (et l'autre a une anti-droite)
+  - il dit "j'ai une annonce" et l'autre dit "zut, j'ai rien"
+  - Celui qui a l'annonce donne alors sa 4ieme carte (qui n'a pas le
+    symbole de la droite qu'il a en main), et c'est la carte dupliquée
+- Si les deux joueurs ont une annonce (une droite, donc), l'un d'entre
+  eux (peu importe lequel) montre sa 4ieme carte.
+  - L'autre cherche le symbole commun entre l'annonce de son
+    partenaire et sa 4ieme carte à lui.
+  - Il a forcément une autre carte (en plus de son annonce) avec ce
+    même symbole. C'est la carte dupliquée.
+** Pourquoi ça marche?
+- Ben je sais pas trop (Mt). C'est parce que c'est un plan de Fano,
+  mais ça m'aide pas pour l'expliquer aux participants :)
+** Le rapport à l'informatique?
+- les codes correcteurs, c'est très pratique pour transmettre des données.
+- Cette activité peut venir après le 5x5 de magie que Marie adore.
+* Le tour de magie de la reine Kremer (par Natacha)
+Tour de magie de la reine Kremer ici :
+https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-roi
+** Matériel
+- un jeu de 52 cartes, avec une jolie face cachée verte émeraude or so.
+** L'activité
+- On prend des cartes pour faire un carré 4x4 (ou autre) en racontant
+  une histoire où la reine veut faire un assemblage de tous les
+  portraits de famille. On place des rois/reines à des endroits bien
+  précis, et des sans atout pour remplir. Mais l'air de rien.
+- La reine Kremer est presque satisfaite, mais mais comme elle est
+  mégalo, elle veut que ça dessine un grand K. On inverse donc les
+  cartes pour que les faces cachées dessinent ceci:
+    X O X O
+    X X O O
+    X O X O
+    X O O X
+- Malheur, dans la nuit, les voleurs viennent voler le tableau. Pour
+  pouvoir l'emporter, ils le plient bien proprement (le public fait
+  les pliages successifs qu'il veut, jusqu'à arriver à une seule
+  pile).
+- Heureusement, l'alarme résonne et les voleurs doivent abandonner
+  leur trésor sur place, plié en une seule pile
+- La reine arrive paniquée et vérifie que les portraits n'ont pas été
+  abîmés, au moins. Magie, quand on regarde dans la pile, toutes les
+  reines sont dans le même sens, et elles sont seules dans ce cas
+** Pourquoi ça marche ?
+- On peut facilement faire un théorème qui dit que si tu fais un
+  damier alterné de carte pile et face sur un rectangle, cette
+  propriété de damier alterné est stable par pliage. On montre que
+  c'est stable par pliage en enchaînant quelques exemples.
+- De plus, le dessin du K ci-dessus a 4 positions qui violent la
+  propriété d'alternance, celles en majuscule ci-dessous: 
+    x o x o                                 . . . .
+    X x o O                                 X . . X
+    x o x o  ie, marquées d'une croix ici   . . . .
+    X O o x                                 X X . .
+- il suffit donc de placer les 4 reines aux 4 positions qui violent la
+  règle d'alternance pour qu'elles se retrouvent seules dans leur sens
+  à la fin de tous les pliages.
+- On peut inventer d'autres motifs pour mettre plus ou moins de cartes
+  inversées, genre un I sur un 3x3, etc
+** Lien à l'informatique
+- C'est un bon exemple pour parler de la notion d'invariant, dans la
+  suite de la stratégie gagnante du jeu de Nim à un seul tas.
+- Ici, c'est l'invariant d'alternance de damier qui fait que toutes
+  les cartes sont dans le même sens à la fin (sauf les cartes qu'on a
+  placées exprès à l'envers par rapport à cette alternance).
+
+- En informatique, les invariants sont un moyen puissant et souvent
+  simple de s'assurer (ou démontrer) que les algorithmes qu'on écrit
+  sont corrects.
+
+* La carte de visite - machine de Turing
+- http://alvyray.com/CreativeCommons/BizCardUniversalTuringMachine_v1.6.pdf
+- http://alvyray.com/CreativeCommons/TuringToysdotcom.htm
+- La machine de turing de la MMI évoque ça à Marie, qui l'a vu à la conf scratch cet été
+
+* Pascal Lafourcade : notion de variable (non dans cargo bot)  
+Jeu pour apprendre à manipuler des variables sur applications mobiles.  
+- Une version avec des couleurs
+- Une version avec des chiffres
+- Une version en codant un programme en couleur ou en chiffres
+- Une version avec tes boucles et conditions sur les chiffres pour trier un tableau.
+
+* Cargo Bot (par Benjamin)
+- Démonstration filmée de l'activité de CargoBot, vidéo à venir sur le
+  site de la MMI
+- la version branchée http://www-verimag.imag.fr/~wack/CargoBot/
+- Discussion sur le test d'arrêt : boucle infinie, il faut que
+  l'équipe de programmeurs arrête celui ou celle qui exécute le
+  programme quand l'objectif est atteint (il n'est pas possible
+  d'écrire le test avec le jeu de primitives fourni).
+- Sur le choix du jeu d'instructions : il est bridé, cela permet de
+  discuter de l'expressivité du "langage", en particulier le nombre
+  d'instructions par fonction est limité (à 10 ou 12), de justifier le
+  besoin de primitives nouvelles (par exemple "retourner un gobelet"
+  devient indispensable pour certains programmes)
+- Pour ce qui est des tests et conditions : c'est possible de tester
+  la couleur (du gobelet qui est dans la pince) et d'exécuter une
+  instruction ou un appel de fonction si le gobelet pris est de la
+  bonne couleur.
+- Notion de programme qui s'arrête : le programme qui trie les
+  gobelets verts d'un côté et jaunes de l'autre a un appel à une
+  fonction, qui ressort si la pince est vide.
+- Notion de récursivité : le programme dépile entièrement une pile de
+  gobelets de deux couleurs, puis reconstruit de l'autre côté une pile
+  à l'identique.
+- Dans le même genre d'idée en branché pour faire de la récursivité :
+  http://robozzle.com/
+- histoire de l'idée de Cargobot : c'était une des premières appli
+  pour mac, et quelqu'un de la silicon valley qui en faisait une
+  version simple débranchée. Il n'y avait pas de récursivité, rien.
+- Un lien pourrait être établi avec Poppy Ergo où l'on pourrait
+  programmer en Scratch l'algorithme correspondant à CargoBot pour le
+  faire exécuter par Poppy
+  (https://www.poppy-project.org/en/robots/poppy-ergo-jr et plus
+  particulièrement la vidéo illustrant le bras avec la pince
+  https://www.youtube.com/watch?v=usDAgvcEXJA)
+
+* Les marmottes de Huffman (par Marie)
+- c'est une activité inventée suite au montage des vidéos de Class'Code
+- démonstration filmée
+- minimiser le nombre de bruits de pas des marmottes
+- compter le nombre de pas d'un arbre donné :  
+- Question: comment montrer l'optimalité de la solution construite ? Comment la faire trouver ?
+   - La preuve est délicate, l'invariant : "il existe une solution optimale contenant la forêt construite jusqu'ici"
+   -> 2 lemmes : choix arbitraire des 2 minimas + propagation de l'optimal 
+- Extension : on peut montrer les parallèles et différences avec le
+  codage du morse, qui lui n'est pas un codage préfixe (car on peut
+  mettre des blancs entre les lettres qu'on envoi)
+
+* Les bases de donnée en carton (par Marie)
+** Matériel
+- Différentes cartes perforées sur un coté, une par ami qui avec les
+  plats qu'il aime (une encoche si aime, et un trou sinon)
+- Une feuille reprenant les informations dans un ptit texte, forme
+  impossible à lire efficacement.
+** Activité 1: les goûts culinaires de mes amis
+- Question 1: Que faire à manger à Léa, Paul et Marie ?
+  - Forcément, en lisant le texte, c'est super difficile de trouver le
+    plat commun à ces gens.
+  - Avec la forme de carte à perforé, c'est très simple : il suffit de
+    les aligner et regarder le(s) plat(s) qui ont des encoches sur
+    toutes les cartes.
+- Question 2: Qui puis-je inviter à manger des ravioles du Dauphiné?
+  - On fait de telles sélection avec une aiguille à tricoter.
+  - Ceux qui restent coincés sont ceux qui n'aiment pas.
+- Question 3: Faire des ET dans ma base
+  - Utiliser deux aiguilles simultanément.
+- Question 4: Faire des OU dans ma base
+  - On filtre sur l'un des critères, puis sur l'autre, à tour de rôle
+- Question 5: Faire une sélection genre "qui est végétarien"
+  - Une fiche spécifique sert de filtre et continent que des trous sur
+    les plats avec de la viande.
+  - Ceux qui restent accrochés sont pas végétariens
+- Question 6: trouver des groupes de personnes qui ont les mêmes goûts
+  - On procède par dichotomie en faisant des tas ;-) 
+- Question 7: réfléchir à la mise à jour de la DB
+  - on voit qu'ajouter un ami (une fiche) est assez simple
+  - idem pour retirer une fiche
+  - ajouter un plat en revanche est plus compliqué: il faut demander à
+    tous ses amis (ou faire un choix par défaut), et modifier chacune
+    des cartes.
+** Activité 2: l'agent immobilier
+- Avec une perforatrice à long bras on peut faire des trous plus ou
+  moins loin du bord, ce qui permet par exemple de coder le nombre de
+  pièces dans un logement pour un agent immobilier et pas uniquement
+  des valeurs binaires.
+- C'est pénible car les cartes sont un peu fragiles, mais ça marche
+- Mais c'est exactement le principe de la machine à recenser la population
+  américaine, qui a aboutit à la création d'IBM en 1910 (35 ans avant
+  le premier ordinateur):
+  http://perso.telecom-paristech.fr/~blanchet/SIP_UE_INF227/histoire/prehistoire/hollerith.htm
+- On peut même faire du tri mécanographique => https://en.wikipedia.org/wiki/Radix_sort
+
+* JdR d'architecture (par Pascal)
+- activité jouée en classe de CM2 
+- 5 éléments : écran, clavier, mémoire, processeur, bus
+- Le processeur exécute son programme, en demandant au bus d'aller
+  voir les composants pour échanger les données
+
+* Stéganographie perlée (par Sylvie)
+- Dissimuler de l'information avec des clairs ou foncés de la couleur
+- Présentation pdf à venir
+** matériel
+- des perles Hama (http://www.hama.dk/) ou équivalent
+** L'activité
+- on fait faire un dessin qui sert de base, puis on change des pixels
+  pour cacher du sens.
+- C'est pas pratique de modifier une création Hama en devenir, il vaut
+  mieux dessiner sur papier avant et faire le modifié direct
+- Attention au fer à repasser, c'est chaud...
+- Un gros avantage est que les participants partent avec un objet à eux
+** Comment ça marche
+- Pour des nombres, chaque chiffre est codé dans un carré 3x3
+  - le pixel clair est à l'endroit qui représente un chiffre
+  - rien : 0 ; en haut à gauche : 1 ; etc
+  - on peut ainsi coder son année de naissance dans un dessin 6x6
+- Si on veut coder des lettres, il faut des blocs de 5 bits par lettre
+  - On peut n'utiliser que le fond de l'image (et non le premier plan)
+    pour que ça se voit un peu moins
+  - On peut utiliser une feuille à trou pour trouver les pixels du
+    fond qui ont du sens, et mettre du bruit sur le reste du fond 
+
+* Ghostbusters sans risque (JM et Anne)
+** Matériel
+- des grilles avec beaucoup de trous possibles dedans
+- Des rivets avec une petite boule au bout, et des couleurs (en vernis
+  à ongle) pour les différencier
+- Des pages indiquant les emplacements où mettre quel rivet
+** Activité
+- les chasseurs de fantômes (rivets gris) tirent sur les fantomes
+  (rivets colorés). Chaque tir fait un rayon laser, représenté par un
+  élastique.
+- Si les rayons se croisent, c'est la fin du monde. Il faut donc
+  trouver un algo pour choisir quel chasseur tire sur quel fantôme.
+- Cette activité se prête bien à l'approche classique "avec les
+  mains", "sans les mains", "sans les yeux" pour forcer à monter en
+  généralité jusqu'à la verbalisation.
+- Différents algos à proposer.
+  - Algo par enveloppe convexe (marche pas sur toutes les configs)
+  - Algo diviser pour régner.
+    - on coupe en deux moitiés de façon à ce que chaque coté de la
+      droite, y'ait le même nombre de chasseurs et fantômes (C=F de
+      chaque coté de la droite)
+  - Algo local par dé-croisement. 
+  - Des algorithmes d'optimisation linéaire en nombres entiers D. Knuth
+- Il y a beaucoup de grilles intéressantes proposées, qui servent de
+  contre-exemple aux mauvais algos souvent proposés
+
+
+
+* Réflexion pour la formation pour les profs. ressources ? idées ?
+- pixees science participative compte youtube : les videos avec Marie
+  qui fait des activités et les retours de comment ça se passe
+- Formation à Lyon "Comprendre et enseigner l'informatique au collège"
+  https://sites.google.com/site/ceinfocollege/
+- Les maisons pour la science jouent un rôle important pour le
+  maillage du territoire avec des activités.
+  - Peut-être que la MplS de Clermont ou celle de Grenoble pourrait
+    venir en aide aux pauvres lyonnais délaissés?
+  - Crainte sur la pérénité du mécanisme
+
+
+
+
