@@ -144,10 +144,12 @@ https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-r
 - La reine Kremer est presque satisfaite, mais mais comme elle est
   mégalo, elle veut que ça dessine un grand K. On inverse donc les
   cartes pour que les faces cachées dessinent ceci:
+#+BEGIN_EXAMPLE
     X O X O
     X X O O
     X O X O
     X O O X
+#+END_EXAMPLE
 - Malheur, dans la nuit, les voleurs viennent voler le tableau. Pour
   pouvoir l'emporter, ils le plient bien proprement (le public fait
   les pliages successifs qu'il veut, jusqu'à arriver à une seule
@@ -164,10 +166,12 @@ https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-r
   c'est stable par pliage en enchaînant quelques exemples.
 - De plus, le dessin du K ci-dessus a 4 positions qui violent la
   propriété d'alternance, celles en majuscule ci-dessous: 
+#+BEGIN_EXAMPLE
     x o x o                                 . . . .
     X x o O                                 X . . X
     x o x o  ie, marquées d'une croix ici   . . . .
     X O o x                                 X X . .
+#+END_EXAMPLE
 - il suffit donc de placer les 4 reines aux 4 positions qui violent la
   règle d'alternance pour qu'elles se retrouvent seules dans leur sens
   à la fin de tous les pliages.
@@ -296,7 +300,7 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 * Stéganographie perlée (par Sylvie)
 - Dissimuler de l'information avec des clairs ou foncés de la couleur
 - Présentation pdf à venir
-** matériel
+** Matériel
 - des perles Hama (http://www.hama.dk/) ou équivalent
 ** L'activité
 - on fait faire un dessin qui sert de base, puis on change des pixels
@@ -344,7 +348,7 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 
 
 
-* Réflexion pour la formation pour les profs. ressources ? idées ?
+* Réflexion pour la formation pour les profs: ressources ? idées ?
 - pixees science participative compte youtube : les videos avec Marie
   qui fait des activités et les retours de comment ça se passe
 - Formation à Lyon "Comprendre et enseigner l'informatique au collège"
