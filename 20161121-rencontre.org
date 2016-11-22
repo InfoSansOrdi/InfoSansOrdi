@@ -73,8 +73,14 @@ Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
   - Donc si les 4 contraintes sont OK, le public a retourné la 4x4
     qui n'est dans aucune contrainte
 ** Pourquoi ça marche?
-- Ma principale question est de savoir pourquoi je peux toujours réparer
-  les 4 contraintes en inversant au plus une carte.
+- Les mots valides sont à distance d=2 les uns des autres (pourquoi?)
+- Donc quand le public casse le mot valide de la première magicienne,
+  la seconde peut facilement revenir au mot valide cassé en trouvant
+  le changement à faire.
+- En revanche, je ne sais pas pourquoi ça marche à tous les coups. En
+  particulier, je ne sais pas pourquoi tous les mots possibles sont au
+  plus à distance 1 d'un mot valide (pourquoi je peux toujours réparer
+  les 4 contraintes en inversant au plus une carte).
 ** Extension sympa
 - Jouer avec seulement 2x2 cartes, ce qui permet peut-être aux enfants
   de comprendre ce qui se passe (mais comment?)
@@ -128,9 +134,10 @@ Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
 ** Pourquoi ça marche?
 - Ben je sais pas trop (Mt). C'est parce que c'est un plan de Fano,
   mais ça m'aide pas pour l'expliquer aux participants :)
-** Le rapport à l'informatique?
+** Rapport à l'informatique
 - les codes correcteurs, c'est très pratique pour transmettre des données.
-- Cette activité peut venir après le 5x5 de magie que Marie adore.
+- Cette activité semble assez avancée pour conclure le cycle après
+  l'activité issue de CS unplug.
 * Le tour de magie de la reine Kremer (par Natacha)
 Tour de magie de la reine Kremer ici :
 https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-roi
@@ -193,7 +200,7 @@ https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-r
 - http://alvyray.com/CreativeCommons/TuringToysdotcom.htm
 - La machine de turing de la MMI évoque ça à Marie, qui l'a vu à la conf scratch cet été
 
-* Pascal Lafourcade : notion de variable (non dans cargo bot)  
+* Variables dans Cargo Bot (par Pascal)  
 Jeu pour apprendre à manipuler des variables sur applications mobiles.  
 - Une version avec des couleurs
 - Une version avec des chiffres
