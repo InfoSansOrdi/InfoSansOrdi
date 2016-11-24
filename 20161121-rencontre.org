@@ -306,7 +306,7 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 
 * Stéganographie perlée (par Sylvie)
 - Dissimuler de l'information avec des clairs ou foncés de la couleur
-- [[20161121-rencontre/stéganographie-perlée.pdf][Présentation pdf]] dans le répertoire associé
+- [[20161121-rencontre/steganographie-perlee.pdf][Présentation pdf]] dans le répertoire associé
 ** Matériel
 - des perles Hama (http://www.hama.dk/) ou équivalent
 ** L'activité
