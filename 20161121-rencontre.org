@@ -48,6 +48,7 @@ Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
 - La première magicienne cherche à former un mot valide, en inversant
   la carte qui casse les contraintes.
 - Exemple de plateau aléatoire :
+#+BEGIN_EXAMPLE
   X X O X
   O X X X   lignes 1 et 2 OK      (6 cartes X),
   X O O X   lignes 2 et 3 pas bon (5 cartes X). Donc carte sur ligne 3.
@@ -57,6 +58,7 @@ Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
   colonnes 2 et 3 OK      (4 cartes X). => Donc carte sur colonne 1.
 
   Le problème est donc le X en (3,1)
+#+END_EXAMPLE
 - Trick: si toutes les contraintes sont déjà respectées quand la
   première magicienne arrive, soit elle pipote que c'est magique, y'a
   rien à faire, soit elle inverse la carte en bas à droite qui ne sert
@@ -111,7 +113,10 @@ Benjamin Wack, Pascal Lafourcade, Christian Bernigaot, Aline Parreau.
   http://images.math.cnrs.fr/Dobble-et-la-geometrie-finie 
 ** Le matériel
 - Les 7 cartes représentant chacune un point (donc avec les 3 symboles
-  des traits qui passent par ce point). Il faut toutes les cartes en double.
+  des traits qui passent par ce point). Il faut toutes les cartes en
+  double.
+- Natacha nous a distribué une jolie version impirmée d'un tel jeu de
+  cartes 
 ** Activité prévue avec ce matériel
 - But: le public prépare 8 cartes, contenant un seul double, et deux
   magiciens vont regarder chacun la moitié du tas, faire une "partie
@@ -201,7 +206,7 @@ https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-r
 - La machine de turing de la MMI évoque ça à Marie, qui l'a vu à la conf scratch cet été
 
 * Variables dans Cargo Bot (par Pascal)  
-Jeu pour apprendre à manipuler des variables sur applications mobiles.  
+Jeu (application mobile) pour apprendre à manipuler des variables.  
 - Une version avec des couleurs
 - Une version avec des chiffres
 - Une version en codant un programme en couleur ou en chiffres
@@ -210,7 +215,7 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 * Cargo Bot (par Benjamin)
 - Démonstration filmée de l'activité de CargoBot, vidéo à venir sur le
   site de la MMI
-- la version branchée http://www-verimag.imag.fr/~wack/CargoBot/
+- Version débranchée de http://www-verimag.imag.fr/~wack/CargoBot/
 - Discussion sur le test d'arrêt : boucle infinie, il faut que
   l'équipe de programmeurs arrête celui ou celle qui exécute le
   programme quand l'objectif est atteint (il n'est pas possible
@@ -340,6 +345,8 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 - Des rivets avec une petite boule au bout, et des couleurs (en vernis
   à ongle) pour les différencier
 - Des pages indiquant les emplacements où mettre quel rivet
+- Le matériel reste à améliorer pour que les rivets tiennent bien dans
+  la grille
 ** Activité
 - les chasseurs de fantômes (rivets gris) tirent sur les fantomes
   (rivets colorés). Chaque tir fait un rayon laser, représenté par un
@@ -363,8 +370,15 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 
 
 * Réflexion pour la formation pour les profs: ressources ? idées ?
-- pixees science participative compte youtube : les videos avec Marie
-  qui fait des activités et les retours de comment ça se passe
+- La playlist YouTube "Comprendre l'informatique en jouant … avec
+  Marie Duflot" de pixees Science participative. Marie y fait des
+  activités et les retours de comment ça se passe 
+  - https://www.youtube.com/playlist?list=PLWvGMqXvyJAPSMFgCiy6qVHW9bAPu93X5
+- La page des ressources pour des activités débranchées de Pixees
+  - https://pixees.fr/category/support-pedagogique/activite/activite-debranchee/
+- La page des "jeux qui aident à découvrir le code" dont des jeux de
+  plateau, jeux de société, de Pixees : 
+  - https://pixees.fr/ces-jeux-qui-aident-a-decouvrir-le-code/
 - Formation à Lyon "Comprendre et enseigner l'informatique au collège"
   https://sites.google.com/site/ceinfocollege/
 - Les maisons pour la science jouent un rôle important pour le
