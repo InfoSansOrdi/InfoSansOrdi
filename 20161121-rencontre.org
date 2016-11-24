@@ -215,15 +215,16 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
   l'équipe de programmeurs arrête celui ou celle qui exécute le
   programme quand l'objectif est atteint (il n'est pas possible
   d'écrire le test avec le jeu de primitives fourni).
-- Sur le choix du jeu d'instructions : il est bridé, cela permet de
-  discuter de l'expressivité du "langage", en particulier le nombre
-  d'instructions par fonction est limité (à 10 ou 12), de justifier le
+- Sur le choix du jeu d'instructions : il est bridé, en particulier le nombre
+  d'instructions par fonction est limité (à 10 ou 12) et le nombre
+  d'instructions de chaque type peut aussi être limité. Cela permet de
+  discuter de l'expressivité du "langage", de justifier le
   besoin de primitives nouvelles (par exemple "retourner un gobelet"
   devient indispensable pour certains programmes)
 - Pour ce qui est des tests et conditions : c'est possible de tester
   la couleur (du gobelet qui est dans la pince) et d'exécuter une
   instruction ou un appel de fonction si le gobelet pris est de la
-  bonne couleur.
+  bonne couleur (ou si la pince est vide par exemple).
 - Notion de programme qui s'arrête : le programme qui trie les
   gobelets verts d'un côté et jaunes de l'autre a un appel à une
   fonction, qui ressort si la pince est vide.
@@ -233,8 +234,8 @@ Jeu pour apprendre à manipuler des variables sur applications mobiles.
 - Dans le même genre d'idée en branché pour faire de la récursivité :
   http://robozzle.com/
 - histoire de l'idée de Cargobot : c'était une des premières appli
-  pour mac, et quelqu'un de la silicon valley qui en faisait une
-  version simple débranchée. Il n'y avait pas de récursivité, rien.
+  pour Ipad programmée directement sur Ipad. Par ailleurs, quelqu'un
+  de la silicon valley a proposé une activité débranchée à base de gobelets mais sans récursivité : https://csedweek.org/unplugged/thinkersmith.
 - Un lien pourrait être établi avec Poppy Ergo où l'on pourrait
   programmer en Scratch l'algorithme correspondant à CargoBot pour le
   faire exécuter par Poppy
