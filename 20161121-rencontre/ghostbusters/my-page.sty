@@ -1,0 +1,19 @@
+
+\def\ps@myheadings{
+\def\@oddheadline{\begin{minipage}{\textwidth}{
+\textbf{\Large \algorithme} \hfill
+\includegraphics[width=1cm]{logos/isi2.jpg}\\
+\hrulefill
+}
+\end{minipage}
+}
+\def\@oddhead{\protect \@oddheadline}
+\def\@evenhead{\protect \@oddheadline}
+\def\@oddfoot{\begin{minipage}{\textwidth}{
+\hrulefill \\
+\mbox{\site}
+\hfill \mbox{\jour} 
+    \hfill \mbox{\textbf\thepage / \pageref{fin-document}}}
+\end{minipage}
+ }
+}

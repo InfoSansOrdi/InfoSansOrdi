@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt]{article}
+
+%%%%% format de page 
+ \setlength{\textwidth }{18cm} 
+ \setlength{\oddsidemargin}{-1cm} 
+ \setlength{\evensidemargin}{-1cm} 
+ \setlength{\topmargin}{-1cm} 
+ \setlength{\headheight}{0cm} 
+ \setlength{\headsep}{0cm} 
+ \setlength{\textheight}{26cm}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{graphicx}%
+
+
+\usepackage[svgnames]{xcolor} 
+
+\newcounter{moncompteur}
+
+
+
+
+\newenvironment{feuille}[2]{
+\newpage
+\thispagestyle{empty}
+\noindent
+\Large{\textbf{Sciences Manuelles du Numérique}}\hfill \addtocounter{moncompteur}{1}\large{\themoncompteur}\\
+ \Large{\textbf{Ghostbusters : #1 \hfill}}\hfill 
+
+ \centerline{
+ \includegraphics{#2}
+}
+%\vfill
+%\includegraphics[width=4cm]{logo-inria-scientifique-couleur.jpg} \hfill \includegraphics[width=4cm]{logoblanc-fond-encre2lignes.pdf}\hfill \includegraphics[width=4cm]{Irem.png}
+}{} 
+
+
+\begin{document}
+\thispagestyle{empty}
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.1\textheight % Define the command as 10% of the total text height
+
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+
+\vspace{\drop} % Whitespace between the top lines and title
+\centering % Center all text
+\textcolor{Red}{ % Red font color
+{\Huge Sciences Manuelles du Numérique}\\[0.5\baselineskip] % Title line 1
+{\Large ---}\\[0.75\baselineskip] % Title line 2
+{\Huge Planches  \textit{ghostbusters}}\\ % Title line 3
+{\large ou la recherche de segments}}
+
+\vspace{0.25\drop} % Whitespace between the title and short horizontal line
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\vspace{\drop} % Whitespace between the thin horizontal line and the author name
+
+{\Large \textsc{Jean-Marc Vincent}}\par % Author name
+
+\vfill % Whitespace between the author name and publisher text
+\includegraphics[width=5cm]{logo-inria-scientifique-couleur.jpg} \hfill \includegraphics[width=5cm]{logoblanc-fond-encre2lignes.pdf}\hfill \includegraphics[width=5cm]{Irem.png}
+\vspace*{\drop} % Whitespace under the publisher text
+
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+
+\setcounter{moncompteur}{0}
+\begin{feuille}{à la chasse}{Ghost}\end{feuille}
+\begin{feuille}{tous en rond}{Ghost-rond}\end{feuille}
+\begin{feuille}{entouré}{Ghost-tour}\end{feuille}
+\begin{feuille}{isolé}{Ghost-biz}\end{feuille}
+%
+%
+%\begin{feuille}{la grille}{Euler_p5}\end{feuille}
+%\begin{feuille}{les ponts de Königsberg}{Euler_p6}\end{feuille}
+%\begin{feuille}{la ville folle}{Euler_p7}\end{feuille}
+%\begin{feuille}{le sablier}{Euler_p8}\end{feuille}
+%\begin{feuille}{entrelacés}{Euler_p9}\end{feuille}
+\end{document}
