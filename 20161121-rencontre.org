@@ -250,7 +250,8 @@ Jeu (application mobile) pour apprendre à manipuler des variables.
 
 * Les marmottes de Huffman (par Marie)
 - c'est une activité inventée suite au montage des vidéos de Class'Code
-- démonstration filmée
+- démonstration filmée, à venir.
+- Disponible en ligne : [[20161121-rencontre/marmottes/][matériel à découper et fiche explicative]].
 - minimiser le nombre de bruits de pas des marmottes
 - compter le nombre de pas d'un arbre donné :  
 - Question: comment montrer l'optimalité de la solution construite ? Comment la faire trouver ?
