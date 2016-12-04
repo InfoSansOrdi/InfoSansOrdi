@@ -205,7 +205,7 @@ https://openclassrooms.com/courses/tours-de-magie-mathematiques/ces-talents-de-r
 - http://alvyray.com/CreativeCommons/TuringToysdotcom.htm
 - La machine de turing de la MMI évoque ça à Marie, qui l'a vu à la conf scratch cet été
 
-* Variables dans Cargo Bot (par Pascal)  
+* Variables dans Cargo Bot (par Pascal Lafourcade)  
 Jeu (application mobile) pour apprendre à manipuler des variables.  
 - Une version avec des couleurs
 - Une version avec des chiffres
