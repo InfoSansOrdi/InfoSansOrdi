@@ -23,7 +23,8 @@ activités rassemblées ici sont nées hors de tout cadre institutionnel
 avant cette reconnaissance par la SIF. Ce groupe est ouvert à toutes
 les personnes intéressées, en France ou ailleurs.
 
-Notre première journée de travail a eu lieu le 1er avril 2016 à la
-Maison des Mathématiques et de l'Informatique (MMI) de Lyon et la
-prochaine aura lieu le 21 novembre 2016 à la MMI.
+Nos premières journées de travail ont eu lieu :
+- le 1er avril 2016 à la Maison des Mathématiques et de l'Informatique (MMI) de Lyon
+- le 21 novembre 2016 à la MMI.
 
+La prochaine réunion est programmée pour le 23 mai 2017, toujours à la MMI.
