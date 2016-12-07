@@ -6,7 +6,7 @@ avec Timothée), Sylvie Alayrangues, Natacha Portier, Yann Secq,
 Philippe Marquet, Martin Quinson, Jean-Marc Vincent, Anne Rasse,
 Benjamin Wack, Pascal Lafourcade, Christian Bernigot, Aline Parreau.
 
-* Magie rebranchée par Christian Bernigaot IREM de Clermont
+* Magie rebranchée par Christian Bernigot IREM de Clermont
 - D'après la célèbre activité de CS unplugged.
 - Création d'une petite interface graphique, avec le module Kivy
   https://kivy.org/ pour python (fonctionne sur tablette).
@@ -212,7 +212,7 @@ Jeu (application mobile) pour apprendre à manipuler des variables.
 - Une version en codant un programme en couleur ou en chiffres
 - Une version avec tes boucles et conditions sur les chiffres pour trier un tableau.
 
-* Cargo Bot (par Benjamin)
+* Cargo Bot (par Benjamin Wack)
 - Démonstration filmée de l'activité de CargoBot, vidéo à venir sur le
   site de la MMI
 - Version débranchée de http://www-verimag.imag.fr/~wack/CargoBot/
