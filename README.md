@@ -18,13 +18,16 @@ Notre liste de diffusion est ici :
 https://sympa.inria.fr/sympa/info/infosansordi
 
 Nous sommes un (tout jeune) groupe de travail de la Société
-Informatique de France (SIF) mais pas seulement : de nombreuses
+informatique de France (SIF) mais pas seulement : de nombreuses
 activités rassemblées ici sont nées hors de tout cadre institutionnel
 avant cette reconnaissance par la SIF. Ce groupe est ouvert à toutes
 les personnes intéressées, en France ou ailleurs.
 
-Nos premières journées de travail ont eu lieu :
-- le 1er avril 2016 à la Maison des Mathématiques et de l'Informatique (MMI) de Lyon
-- le 21 novembre 2016 à la MMI.
+## Calendrier 
 
-La prochaine réunion est programmée pour le 23 mai 2017, toujours à la MMI.
+Nos premières journées de travail ont eu lieu :
+- le 1er avril 2016 à la Maison des mathématiques et de l'informatique (MMI) de Lyon
+- le 21 novembre 2016 à la MMI
+- le 23 mai 2017, à la MMI
+
+La prochaine réunion est programmée pour le 23 novembre 2017, toujours à la MMI.
