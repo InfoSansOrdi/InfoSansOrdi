@@ -30,4 +30,4 @@ Nos premières journées de travail ont eu lieu :
 - le 21 novembre 2016 à la MMI
 - le 23 mai 2017, à la MMI
 
-La prochaine réunion est programmée pour le 23 novembre 2017, toujours à la MMI.
+La prochaine réunion est programmée pour le vendredi 24 novembre 2017, toujours à la MMI.
