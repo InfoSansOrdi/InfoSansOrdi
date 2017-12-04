@@ -212,7 +212,9 @@ Tangente éducation, numéro double, 96 pages. Sera dispo en librairie
 
 Mettez vos adresses postales afin de recevoir un exemplaire  : 
 
-* Pascal Lafourcade et Malika More : IREM - Campus Universitaire des Cézeaux - 3, place Vasarely - TSA 60026 - CS 60026 - 63178 AUBIERE CEDEX (ne me demandez pas ce que ça veut dire TSA, CS...)
+* Pascal Lafourcade : 17 allee Claude Debussy 63170 Aubiere FRANCE
+
+* Malika More : IREM - Campus Universitaire des Cézeaux - 3, place Vasarely - TSA 60026 - CS 60026 - 63178 AUBIERE CEDEX (ne me demandez pas ce que ça veut dire TSA, CS...)
 
 * Philippe Marquet, Université lille 1, cité sceentifique, bâtiment M3, 59655 Villeneuve d'ascq cedex
 
