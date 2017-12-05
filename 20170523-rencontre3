@@ -1,0 +1,206 @@
+Rencontre InfoSansOrdi n°3 Lyon - 23 mai 2017
+
+Présents
+Marie Duflot
+Martin Quinson
+Malika More
+Christian Bernigot
+Sylvie Alayrangues
+Jean-Marc Vincent
+Anne Rasse
+Aline Parreau
+Eric Duchênes
+Dominique Maniez
+Valentin Gledel
+Nathalie Revol
+Timothée Pécatte
+Gilles Aldon
+Natacha Portier
+
+Jean-Marc : Tangente éducation, public : profs de maths
+ils veulent faire un numéro spécial info sans ordi
+C'est l'occasion de leur montrer qu'il n'y a pas que l'algo dans l'info
+Il va y avoir une page dans un  prochain numéro
+
+Marie : projet d'école pour une maternelle, pour toutes les sections
+info débranchée : Marie va former les enseignants
+Robot idiot et tri
+
+Le routage élastique (Marie)
+présentation d'une activité autour du routage, où les participants jouent le rôle des routeurs. 
+nouvelle activité routage pour class code module réseau
+personne ne doit toucher les mousquetons car élastique
+matériel : ceintures de judo coupées dans la longeur, mousquetons, élastiques
+Liens : 
+ma page médiation (avec en bas la fiche dans la section liens) : 
+https://members.loria.fr/MDuflot/files/med/routage.html
+le cours sur Class'Code : 
+    https://openclassrooms.com/courses/connecter-le-reseau/pratiquez-avec-des-enfants-le-routage-elastiques
+ idées semblables/complémentaires : baseball multicolore (SMN sciences manuelles du numérique inria), le jeu des oranges de CS unplugged   
+
+Martin 
+étudiants de Rennes  qui ont proposé une activité sur la "privacy" pour l'appel d'offre EducNum (ils n'ont pas gagné) :
+	principe les 18-24 ans proposent des activités pour les plus petits
+Quoi ProCo : proposition d'étudiants de Rennes sur la vie privée (Martin)
+Cible = collégiens
+1ere activité : remplir un tableau personnel : à qui veux tu partager tes données (photos, noms,...)
+Ordre des colonnes (cercles concentriques ou pas ? faut-il "randomiser" l'ordre ?)
+2eme activité : comment faire des sondages différentiés ; les gens peuvent mentir si les questions sont trop intrusives (un dé décide si le joueur ment ou pas).
+Les activités sont pour le collège mais pas encore expérimentées
+Remarque sur comment récolter les infos avec les collégiens : il existe des applis sur téléphone qui permettent de capter tous les QR codes d'une pièce (cf lien de Sylvie)
+pour la question intrusive : on peut leur faire baisser la main quand la réponse est non
+Il faudrait faire des chats noirs.
+
+Vote en classe avec QR codes : https://profjourde.wordpress.com/2014/03/14/plickers-des-boitiers-de-vote-en-papier-pour-les-eleves/
+
+- Faire le lien avec les zéro-knowledge proofs, et sur la théorie de l'information (comment cacher de l'info, quantité d'information, combien de questions pour différencier tout le monde)
+- Contacter Cédric qui avait des activités de finger printing vraie vie, 
+
+Jean-Marc
+- Présentation du site de l'IREM de Grenoble qui centralise des ressources sur les activités, proposées par plusieurs groupes
+- Retour d'expérience intéressant en CP/CE1 sur le base ball multicolore, où les enfants sont les bases et s'échangent des duplos. La compétence visée est la collaboration, puisqu'il faut casser des minimum locaux pour éviter les interblocages. (les duplos sont un peu petits. Idée : balles de jonglage, ie du riz dans des ballons de baudruche)
+- Retour d'expérience avec la même activité à la maison pour la science. Mise en place d'une application web (accessible à coté de CargoBot) pour faire un déroulé d'activité, avec interaction directe ou algo tournant automatisé. Nombre de bases variables. http://www-verimag.imag.fr/~wack/baseball/
+- Un collègue de marie rajoute une autre histoire qui parle plus aux jeunes, à base de tempête stellaires et de vaisseaux spatiaux. La resource est en cours de finalisation.
+- À Grenoble, ils ne présentent plus l'algo en ligne qui était la conclusion du déroulé de JC et Mt. A la place, on se pose la question de savoir si, d'après une situation initiale, on a tjs moyen d'amener dans le trou la pierre qu'il faut de façon à ce que tout le reste revienne à sa place ensuite. La solution est oui : on décale tout entre la pierre et le trou, puis la pierre dans le trou, puis on ramène les autres pierres là où elles étaient avant. Bon, c'est mal dit mais ça marche. 
+  - C'est intéressant car l'algo est facilement démontrable avec les lycéens voir collégiens
+  - C'est pas récursif
+  - C'est en 0(somme(distances))  l'algo qu'il propose est en 2 x somme(distances)
+- On pourrait utiliser l'algo de A* pour le résoudre aussi
+- Il faudrait pouvoir cliquer sur une maison pour inverser les occupants de la maison afin de bien revenir à la même situation
+-Martin aimerait bien avoir une jolie représentation du graphe des configurations...
+
+Timothée
+- activité avec un jeu de carte où les cartes ont un dos violet ou vert, et on propose les images à deux personens, qui disent si elles les garde ou pas. à la fin, on trouve que l'un a pris que vert et l'autre que violet. C'est que la pile était initiialement alternée, et la ruse porte sur les façons de mélanger, qui semblent mélnager sans casser l'invariant "alterné".
+- des cartes avec plein d'images dessus (les mêmes que l'activité précédente) on choisit en secret une image, puis on nous montre plusieurs cartes et à chaque fois on doit dire si le dessin auquel on pense est sur la carte ou non. Au dos des cartes il y a des puissances de 2, le magicien additionne les valeurs au dos des cartes où apparaît l'image, puis il prend son stylo (où il a une antisèche : pour chaque nombre (=la somme qu'il a trouvé) il y a un numéro de page de colonne et de mot dans la colonne), et note au tableau un numéro de page, de colonne et de mot. Et quand le public regarde dans le dico à la page colonne mot demandé, il retrouve le nom de l'image choisie
+- Autre algo de mélange qui revient au même, pour trier 8 cartes: {j'en met une dessous, je pose} et j'itère jusqu'à la fin du paquet. Il faut le faire 3 fois à 8 cartes, ce qui permet de raconter l'histoire où la première fois je mélange, la seconde fois j'ai raté à trier et la troisième fois, on a démontré que Jean-Marc a un souffle magique !!! Si j'ai plus de 8 cartes, il faut faire plus d'itération et ça lasse le public. C'est testé que jusqu'à 10 cartes, faudrait tester au delà pour voir si ça y'a des cas où ça marche.
+- tour de permutation avec les planètes
+Me voici tout mouillé, je suis un nageur pressé.
+Mange vite ton Mars, j'en sors un nouveau paquet.
+https://openclassrooms.com/courses/tours-de-magie-mathematiques/le-voyage-de-neptune
+
+Maths à modeler :
+- Activité 1 : tout noir tout blanc (à partir du CE2 pour les situations plus faciles, et sans la partie réflexion trop poussée)
+  - Matériel : plateau 5x5, 25 carreaux blanc recto/noir verso (ou vice versa)
+   Il y a une version électronique pour faire les démos, accessible sur le site maths à modeler Lyon.
+   http://mathsamodeler.liris.cnrs.fr/laValise.php
+  - but : tout mettre blanc. Quand on retourne une case on retourne les 4 voisins (au centre, la case dessus, la case dessous, à drt, à gch= voisinage de von Neumann)
+  - Pour avancer, il faut savoir décrire les retournements faits. l'ordre des retournements est sans importance, et c'est modulo 2. Donc à la fin, il faut que chaque case ait un nombre impaire de voisins cliqués.
+  - Si on donne les clics sur la première ligne, l'algo se déroule de façon déterministe où l'on cherche à éteindre ceux restés allumés sur la ligne du dessus. Bien sûr, certaines lignes initiales ne donnent pas de solution quand on déroule, donc y'a qu'à dérouler toutes les premières lignes possibles (2^5 existantes), et dérouler l'algo pour voir ce qui marche.
+  - Des variantes sur la règle de retournement et sur la taille de plateau.
+  - En CE2 on fait 1xn 2xn (avec n qui grandit pour forcer à trouver des motifs). Ils arrivent à faire 5x5 si tu les aide bien sur la modélisation du pb
+- Activité 2: La chasse à la bête
+ - Matériel : plateau 5x5, des pions 1x1 qui font piège, et des 3x1 qui font la bête. Question: combien de pièges au min pour empecher la bête de se poser ?
+ - Il faut au moins 8 pièges car on peut poser 8 bêtes qui se marchent pas dessus donc faudra casser chacune des positions
+ - On finit par trouver une disposition à pièges qui fonctionne.
+ - ensuite, la bête est de 3 cases en L. Il faut encore 8 au mois puisqu'il y a un pavage à 8 betes.
+  Dans tous les carrés de 2x2, il en faut 2
+ - c'est l'occasion de parler de conditions nécessaires/suffisantes, des bornes inférieures et supérieures.
+   - des réflexions genre "si y'a une solution à 9 pièges, il doit commencer comme ça, mais ca termine pas bien"
+ - c'est super utile en cours de programation linéaire
+ - On peut peut-être utiliser une histoire de bataille navale à la place des bêtes
+ - Des variantes: autres formes de bêtes, autres tailles de grilles. Grille torique ou cylindrique.
+ - L'enrobage est indiférement en maths (preuves, bornes, minimums locaux/globaux) ou informatique (en s'appuyant sur le cours de recherche opérationnelle)
+ 
+ Jean-Marc
+Activité Alice déménage avec du carton et du papier
+environ une heure de temps de recherche élève
+la fiche prof existe, et aussi la fiche élève
+ 
+------------------------------------------------------------
+
+Numéro spécial de tangente éducation : faire des fiches cohérentes ?
+ - articles réutilisables ? Embargo de 3 mois puis diffusion libre
+   Ils font un travail d'édition et un travail graphique dessus
+ - que mettre dans les articles ? Important : faire le lien avec l'informatique car les profs de maths ne le voient pas forcément
+ - Quel volume ? 24 pages
+ - C'est un pied dans la porte pour toucher les profs de maths
+ - Quel lectorat? Ici, c'est les profs de maths de collège/lycée
+- idée : 20 pages, si on reprend le plan du livre d'ISN (dirigé par Dowek), cela fait 4 parties, avec un chapeau, deux activités et des liens
+une activité facile à mener (qui ne fait pas peur) et une plus surprenante pour un public de profs de maths
+- insister sur le fait que les activités ne sont pas forcément liées à un niveau scolaire, mais à un niveau en info, et donc peuvent se décliner dans différentes années (des fois 6ème et L2)
+
+- On cherche des activités qui ont un rapport avec les vrais systèmes informatiques
+- On dirige le choix d'activité sur les notions qu'on veut montrer
+- Ligne éditoriale: il faut forcer le trait pour cacher un peu l'algorithmique car les matheux exagèrent l'importance de cette partie.
+- Il faut des photos en situation en classe, avec des témoignages de retours des enseignants
+Ci-dessous : deux activités sélectionnées par thème (les deux qui sont immédiatement sous le titre).
+Rédacteurs par binôme : un spécialiste et un candide - en bout de ligne
+
+* Information
+ - Figure téléphonée / Télévision/ Pixel au paravent: transmission d'une image 5x5 (codage, compression) puis carte retournée sur un 6x6 (code correcteurs) -- mettre en évidence le trophée Shannon -> Grenoble+Natacha
+ - Base de données avec des aiguilles à tricoter -> Nancy + Nathalie
+
+ - Extension de la figure téléphonée: images vectorielles (qui est plus langage qu'information)
+ - Quantité d'information (par exemple énigmes de pesage) jeu des 20 questions
+ - Marmottes (lempel-ziv)
+ - Privacy différenciée
+ - Extension Stéganographie perlée
+
+* Algorithmes: on veut montrer les principes algorithmiques
+- Crépier maniaque (boucles, conditions, récursivité, tri) -> Bretagne + MMI (Timothée/Nathalie)
+- Baseball multicolore (preuve de correction et terminaison) qu'on devrait renommer avec des planètes et des vaisseaux -> Bretagne + Nancy
+
+- jeu de Nim/ course à 20 (ceci est un algorithme; on construit un système de configurations (graphe), et on cherche un algo pour naviguer jusqu'à la solution)
+- Marmottes (algo glouton, optimalité) matériel un peu compliqué
+- Extensions: Planches à clous ou puzzle carré ou alice déménage pour la NP complétude
+- balances de roberval (complexité algorithmique) matériel : un fil et deux aiguilles pour compter sur la gravité
+
+
+* Langages
+ - CargoBot (puissance de langages) -> Grenoble + MathAModeler
+ - Automate de reconnaissance du langage, activité du labyrinthe -> Clermont + Rennes
+
+ - robot idiot (passage d'un langage de translations à un langage avec des rotations)
+ - Extensions: d'autres activités autour des automates (flexagone, carte au trésor)
+
+* Machines
+ - Routage élastique -> Nancy+Rennes
+ - Jeu de rôle architecture -> Clermont
+
+ - réseau de tri et parallélisme
+ - démontage d'un PC
+
+Mettre pour chaque activité des pistes "pour aller plus loin", qui peuvent avoir du branché dedans
+
+Message 1: l'informatique c'est comme le ski: les débutants ont le même niveau quel que soit son âge
+Message 2: sur chaque activité, on peut se poser des questions dépendantes du niveau scolaire des participants
+
+Les recettes du jour :
+	Pain d'épices
+
+125 grammes de miel
+100 grammes de sucre
+250 grammes de farine
+1 sachet de levure chimique
+1 cuillère à soupe d'anis vert (graines)
+40 grammes d'huile
+1 verre d'eau (j'ai mis une petite tasse de tisane réglisse-menthe)
+
+Mélanger le miel, le sucre, l'anis, l'huile et l'eau. Ajouter d'un seul coup la farine et la levure. Méllanger, avec un fouet si besoin. Faire cuire trois quarts d'heure à 150 degrés C (indication pour four à chaleur tournante).
+
+   Clafoutis
+   
+750g de cerises
+75g beurre
+125g sucre
+3 œufs
+2.5dl lait
+75g farine
+1 sachert de sucre vanillé
+1 pincée de sel
+
+Préchauffer le four à th. 7 (200 degrés)
+
+Nettoyez et séchez les cerises, équeutez-les mais ne les dénoyautez pas.
+Beurrez un plat à four. Alignez les cerises bien serrées en une seule couche.
+
+Préparez la pâte : mélangez les œufs, les sucres et le sel jusqu'à ce que le mélange blanchisse.
+Faites fondre le beurre, incorporez-la à la pâte. Incorporez ensuite la farine puis le lait.
+La pâte doit être homogène. Versez-la sur les cerises.
+
+Enfournez pour 40mn (j'ai laissé plutôt 1h).
+
+Laissez le clafoutis refroidir et saupoudrez-le de sucre glace avant de servir.
+
+Vous pouvez ajouter quelques gouttes de rhum ou de cognac dans la pâte si vous le désirez.
+
