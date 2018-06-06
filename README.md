@@ -29,5 +29,6 @@ Nos premières journées de travail ont eu lieu :
 - le 1er avril 2016 à la Maison des mathématiques et de l'informatique (MMI) de Lyon
 - le 21 novembre 2016 à la MMI
 - le 23 mai 2017, à la MMI
+- 24 novembre 2017, à la MMI
 
-La prochaine réunion est programmée pour le vendredi 24 novembre 2017, toujours à la MMI.
+La prochaine réunion est programmée pour le vendredi 15 juin 2018 (à proximité de la MMI), à l'ENS Lyon, amphi B, 3e étage, entrée par l'aile sud. 
