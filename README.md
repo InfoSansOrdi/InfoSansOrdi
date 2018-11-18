@@ -31,6 +31,6 @@ Nos premières journées de travail ont eu lieu :
 - le 23 mai 2017, à la MMI
 - 24 novembre 2017, à la MMI
 - 15 juin 2018, à l'ENS Lyon
+- le vendredi 16 novembre 2018, à la MMI
 
-La prochaine réunion est programmée pour le vendredi 16 novembre 2018,
-toujours à la MMI, Lyon. 
+La prochaine réunion se déroulera au printemps 2019, probablement à Paris. 
