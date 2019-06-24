@@ -26,6 +26,7 @@ les personnes intéressées, en France ou ailleurs.
 ## Calendrier 
 
 Nos premières journées de travail ont eu lieu :
+
 - le 1er avril 2016 à la Maison des mathématiques et de l'informatique (MMI) de Lyon
 - le 21 novembre 2016 à la MMI
 - le 23 mai 2017, à la MMI
@@ -33,5 +34,6 @@ Nos premières journées de travail ont eu lieu :
 - 15 juin 2018, à l'ENS Lyon
 - vendredi 16 novembre 2018, à la MMI
 - vendredi 14 juin 2019, au LIP6, Paris
-La prochaine réunion se déroulera en novembre 2019 à la MMI.
+
+La prochaine réunion se déroulera a priori le lundi 25 novembre 2019 à la MMI.
 
