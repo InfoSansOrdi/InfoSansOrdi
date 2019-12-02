@@ -34,7 +34,7 @@ Nos premières journées de travail ont eu lieu :
 - 15 juin 2018, à l'ENS Lyon
 - vendredi 16 novembre 2018, à la MMI
 - vendredi 14 juin 2019, au LIP6, Paris
-- lundi 25 novembre à la MMI
+- lundi 25 novembre 2019 à la MMI
 
 La prochaine réunion (la neuvième) se déroulera a priori le vendredi 5 juin 2020 à la MMI et sera suivie le samedi 6 juin par une journée d'ateliers pour enseignants.
 
