@@ -36,5 +36,6 @@ Nos premières journées de travail ont eu lieu :
 - vendredi 14 juin 2019, au LIP6, Paris
 - lundi 25 novembre 2019 à la MMI
 
-La prochaine réunion (la neuvième) se déroulera a priori le vendredi 5 juin 2020 à la MMI et sera suivie le samedi 6 juin par une journée d'ateliers pour enseignants.
+annulé : La prochaine réunion (la neuvième) se déroulera a priori le vendredi 5 juin 2020 à la MMI et sera suivie le samedi 6 juin par une journée d'ateliers pour enseignants.
 
+La prochaine réunion (la neuvième) se déroulera à la MMI le jeudi 25 novembre 2021.
