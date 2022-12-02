@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        InfoSansOrdi 30 nov 2022 - CodiMD
+    </title>
+    <link rel="icon" type="image/png" href="https://codimd.math.cnrs.fr/favicon.png">
+    <link rel="apple-touch-icon" href="https://codimd.math.cnrs.fr/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.night .markdown-body blockquote{color:#bcbcbc}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.night .markdown-body h1,.night .markdown-body h2,.night .markdown-body h3,.night .markdown-body h4,.night .markdown-body h5,.night .markdown-body h6{color:#ddd}.markdown-body h1 .fa-link,.markdown-body h2 .fa-link,.markdown-body h3 .fa-link,.markdown-body h4 .fa-link,.markdown-body h5 .fa-link,.markdown-body h6 .fa-link{color:#000;vertical-align:middle;visibility:hidden;font-size:16px}.night .markdown-body h1 .fa-link,.night .markdown-body h2 .fa-link,.night .markdown-body h3 .fa-link,.night .markdown-body h4 .fa-link,.night .markdown-body h5 .fa-link,.night .markdown-body h6 .fa-link{color:#fff}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .fa-link,.markdown-body h2:hover .anchor .fa-link,.markdown-body h3:hover .anchor .fa-link,.markdown-body h4:hover .anchor .fa-link,.markdown-body h5:hover .anchor .fa-link,.markdown-body h6:hover .anchor .fa-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.night .markdown-body table tr{background-color:#5f5f5f}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.night .markdown-body table tr:nth-child(2n){background-color:#4f4f4f}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.night .markdown-body code,.night .markdown-body tt{color:#eee;background-color:hsla(0,0%,90.2%,.36)}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.night .markdown-body pre{filter:invert(100%)}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.night .markdown-body .gist table tr:nth-child(2n){background-color:#ddd}.markdown-body code[data-gist-id]{background:none;padding:0;filter:invert(100%)}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.geo,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.night .markdown-body pre.graphviz .graph>polygon{fill:#333}.night .markdown-body pre.mermaid .sectionTitle,.night .markdown-body pre.mermaid .titleText,.night .markdown-body pre.mermaid text{fill:#fff}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.night .markdown-body .abc path{fill:#eee}.night .markdown-body .abc path.note_selected{fill:##4DD0E1}.night tspan{fill:#fefefe}.night pre rect{fill:transparent}.night pre.flow-chart path,.night pre.flow-chart rect{stroke:#fff}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body img{background-color:transparent}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;-webkit-transition:opacity .2s;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;-webkit-transition:opacity .2s;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.geo-map{width:100%;height:250px}.markmap-container{height:300px}.markmap-container>svg{width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.9;background-color:#ccc;border:none}.ui-toc-label,.ui-toc .open .ui-toc-label{-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#5f5f5f}.ui-toc-label:focus{opacity:1;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.night .ui-toc-dropdown .nav>li>a:focus,.night .ui-toc-dropdown .nav>li>a:hover{color:#fff;border-left-color:#fff}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.night .ui-toc-dropdown .nav>.active:focus>a,.night .ui-toc-dropdown .nav>.active:hover>a,.night .ui-toc-dropdown .nav>.active>a{color:#fff;border-left:2px solid #fff}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.night .ui-toc-dropdown .nav>li>a{color:#aaa}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:50px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>a{padding-right:50px}.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:60px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>ul>li>a{padding-right:60px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>a:hover{padding-left:49px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>a:hover{padding-right:49px}.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>ul>li>ul>li>a:hover{padding-left:59px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>ul>li>ul>li>a:hover{padding-right:59px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active>a{padding-left:48px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.active>.nav>.nav>.active>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>.nav>.active:hover>a{padding-right:48px}.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>.nav>.active>.nav>.active>a{padding-left:58px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.active>.nav>.nav>.active>.nav>.active>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>.nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>.nav>.active>.nav>.active:hover>a{padding-right:58px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,"\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3",Osaka,Meiryo,"\30E1\30A4\30EA\30AA",MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,"\5FAE\8EDF\6B63\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,"\5FAE\8EDF\6B63\9ED1UI",sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,"\5FAE\8F6F\96C5\9ED1UI",sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:rgba(0,0,0,.85)}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}.night .navbar{background:#333;border-bottom-color:#333;color:#eee}.night .navbar a{color:#eee}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" lang="en"><h1 id="Journée-InfoSansOrdi-Lyon-30-novembre-2022"><a class="anchor hidden-xs" href="#Journée-InfoSansOrdi-Lyon-30-novembre-2022" title="Journée-InfoSansOrdi-Lyon-30-novembre-2022"><i class="fa fa-link"></i></a>Journée InfoSansOrdi Lyon 30 novembre 2022</h1><h2 id="Tour-de-table"><a class="anchor hidden-xs" href="#Tour-de-table" title="Tour-de-table"><i class="fa fa-link"></i></a>Tour de table</h2><p>Jean Marc Vincent - Grenoble<br>
+Marie Duflot Kremer - Nancy<br>
+Natacha Portier - Lyon<br>
+Nathalie Revol - Lyon<br>
+Anaïs Durand - Clermont<br>
+Pascal Lafoucarde - Clermont<br>
+Malika More - Clermont<br>
+Mathieu Lefort - Lyon<br>
+Elsa Menival - Lyon MMI<br>
+Aline Parreau - Lyon<br>
+Nina Gasking - Lyon MMI<br>
+Zoé, Yasmine, Adam, Yanis : stagiaires de 3eme</p><h2 id="Marie---Magimatique"><a class="anchor hidden-xs" href="#Marie---Magimatique" title="Marie---Magimatique"><i class="fa fa-link"></i></a>Marie - Magimatique</h2><h3 id="Tour-1"><a class="anchor hidden-xs" href="#Tour-1" title="Tour-1"><i class="fa fa-link"></i></a>Tour 1</h3><p>Marie a un jeu ordonnée avec 16 cartes dans chaque couleur (elle a ajouté un 0 et un joker par couleur sur un jeu de tarot). Elle demande à un joueur de couper le jeu et distribue 6 cartes faces cachées. Elle demande aux personnes avec une carte rouge de lever la main, avec cette info elle devine la première carte :<br>
+les deux premières infos donnent la couleur (rouge-rouge = Coeur, rouge-noir = carreau, noir-rouge = trèfle, noir-noir = pique), les 4 autres codent en binaire le numéro.</p><p>Rouge-noir alterne avec une suite de brujn, puis place les cartes avec le bon numero et la bonne couleur au bon endroit.</p><p>Voir image des maths la magie des colliers de perles de de Bruijn :<br>
+<a href="http://images.math.cnrs.fr/La-magie-des-colliers-de-perles-de-Nicolaas-Govert-de-Bruijn.html" target="_blank" rel="noopener">http://images.math.cnrs.fr/La-magie-des-colliers-de-perles-de-Nicolaas-Govert-de-Bruijn.html</a></p><h3 id="Tour-2"><a class="anchor hidden-xs" href="#Tour-2" title="Tour-2"><i class="fa fa-link"></i></a>Tour 2</h3><p>Meme genre de principe mais pas d’info sur la première que Marie arrive à deviner.<br>
+lu sur wikipedia le 29/11/22 un algo pour générer des suites de de Bruijn avec une fenêtre de n (sans savoir ce qu’il y a avant).</p><p>on regarde notre fenêtre de n valeurs : b1…bn<br>
+pour savoir ce qu’on met après bn on regarde la suite b2 … bn 1. Si elle est minimale parmi toutes les permutations circulaires, alors le prochain caractère est 1-b1. si elle ne l’est pas, c’est b1.</p><p>Par exemple : si on a 11000 ici n = 5 et b2 … bn = 1000. On tente de rajouter un 1 à la fin ça donne 10001. Ce n’est pas minimal car si on permute en décalant d’un à gauche on a 00011 qui est plus petit que 10001. Comme ce n’est pas minimal on doit recopier b1 qui était 1 et le sommet suivant donne 10001.</p><p>Autre exemple 10001. ici b2 … bn vaut 0001. Si on a joute un 1 à la fin ça donne 00011 qui est minimal parmi les permutations circulaires. Le prochain chiffre à ajouter est l’inverse de b1 soit 0 et on obtient 00010.</p><p>à 5 cela nous donne :<br>
+0 0 0 0 0 1 1 1 1 1 0 1 1 1 0 0 1 1 0 0 0 1 0 1 1 0 1 0 1 0 0 1</p><p>pour faire mon truc, comme ici j’arrive à deviner le chiffre suivant (pas le précédent) je vais devoir inverser l’ordre des cartes et donc mettre</p><p>R N N R N R N R R N R N N N R R N N R R R N R R R R R N N N N N</p><p>et maintenant je place les cartes suivant mon codage habituel : les deux premières cartes me donnent la famille :</p><ul>
+<li>la première la couleur, la deuxième si noir alors 1 er alpha, si rouge 2eme alpha, ce qui donne :<br>
+N N pique<br>
+N R trèfle<br>
+R N carreau<br>
+R R coeur</li>
+<li>les trois suivantes la valeur (en binaire, poids le plus faible à droite) donc un nombre entre 0 et 7. Comme je n’ai pas de carte 0 j’utilise le 0 pour la carte 8.</li>
+</ul><p>pour la première carte de ma suite ci-dessu, comme elle est au début du motif :<br>
+R N N R N c’est un carreau (R N) et le 2 (N R N)<br>
+la suite de cartes est donc</p><p>2 Ca, 5 P, 2 T, 5 Ca, 3 T, 6 Ca, 5 T, 2 Co, 4 Ca, 8 T, 1 Ca, 3 P, 6 P, 4 T, 1 Co, 3 Ca, 7 P, 6 T, 5 Co, 3 Co, 7 Ca, 7 T, 7 Co, 6 Co, 4 Co, 8 Co, 8 Ca, 8 P, 1 P, 2 P, 4 P, 1 T</p><p>on peut s’éviter de regarder un coup de gauche à droite et un coup de droite à gauche en n’écartant pas la carte AVANT les 5 qu’on donne, mais en faisant deviner la carte d’APRES celles qu’on donne (méthode pratiquée par Nathalie mais avec antisèche, elle – oui mais Nathalie explique comment construire le graphe et le circuit hamiltonien).</p><p>On devine se couleur avec la méthode ci-dessus, puis une fois qu’on a sa couleur on utilise les 4 dernières cartes retournées pour avoir la famille (1 carte suffit, on sait la couleur) et la valeur (3 cartes).Elle commence par deviner la couleur de la carte qui manque…</p><h2 id="MMI-Connecte-tes-neurones"><a class="anchor hidden-xs" href="#MMI-Connecte-tes-neurones" title="MMI-Connecte-tes-neurones"><i class="fa fa-link"></i></a>MMI Connecte tes neurones</h2><p>avec une belle activité bien ficelée : première partie de l’exercice en actiivité “physique” sur une bâche, puis sur table avec du beau matériel :</p><ul>
+<li>on regarde ce que fait chaque neurone</li>
+<li>on ajoute une entrée qui est mal classifiée : premier apprentissage avec une adaptation minime des seuils dans les fonctions des neurones de sortie,</li>
+<li>idem mais la modification minime ne marche pas, comment peut-on procéder (apprentissage) ? les neurones des couches intermédiaires doivent aussi adapter leur seuil<br>
+On attend avec impatience la version rédigée à destination des animateurs et animatrices de l’atelier !-)</li>
+</ul><h2 id="Robots-lumineux"><a class="anchor hidden-xs" href="#Robots-lumineux" title="Robots-lumineux"><i class="fa fa-link"></i></a>Robots lumineux</h2><p><a href="https://sancy.iut.uca.fr/~durand/robot-simulator/" target="_blank" rel="noopener">https://sancy.iut.uca.fr/~durand/robot-simulator/</a></p><h2 id="Infos-diverses"><a class="anchor hidden-xs" href="#Infos-diverses" title="Infos-diverses"><i class="fa fa-link"></i></a>Infos diverses</h2><ul>
+<li>Pascal a déposé un projet ANR pour une école de médiation en informatique avec France IOI, FBP, fin août 2023.</li>
+<li>Wecam à la MMI autour de la cuisine le dernier we de janvier</li>
+<li>Avec asmodee : exposés ISO à Arte, aux échappées inattendues, festival à lyon</li>
+<li>suggestion d’aller à Terra Numerica pour notre prochaine journée ?</li>
+<li>Asmodee en  +
+<ul>
+<li>Atelier réseau de neurones, commence à être faite à la MMI</li>
+<li>Questionnaire pour les gens qui viennent pour voir l’impact (Nina-MMI)</li>
+<li>Cartographie des situations avec Montpellier</li>
+<li>Travail avec les Nicois de Terra Numerica</li>
+<li>question des publications</li>
+</ul>
+</li>
+</ul><h2 id="Publications-des-productions-ISO-"><a class="anchor hidden-xs" href="#Publications-des-productions-ISO-" title="Publications-des-productions-ISO-"><i class="fa fa-link"></i></a>Publications des productions ISO ?</h2><ul>
+<li>possibilité de Tangente (Education), mais ne répond pas trop
+<ul>
+<li>pour : touche les profs, possibilité de faire des impressions à la demande, assez grande liberté</li>
+<li>contre : ne repond pas…</li>
+</ul>
+</li>
+<li>manuel scolaire : il faudra être tres rapide + coller au programme</li>
+<li>Petit X : reste très ESR ?</li>
+</ul><p>Question ? Quelle cible ?</p><p>On partirait plutôt sur Tangente Education</p><p>Thèmes : Info sans ordi général ou centré sur l’IA ?<br>
+Asmodée plutôt motivé pour faire un truc thématisé IA<br>
+Mais on a de quoi refaire un truc ISO.</p><p>Attention sur l’IA, déjà un numéro de tangente education avec la machine de nim :<br>
+<a href="https://www.infinimath.com/librairie/descriptif_livre.php?type=magazines&amp;theme=7&amp;soustheme=26&amp;ref=2716#article" target="_blank" rel="noopener">https://www.infinimath.com/librairie/descriptif_livre.php?type=magazines&amp;theme=7&amp;soustheme=26&amp;ref=2716#article</a></p><p>Sur l’IA, y a des choses hors apprentissage : ontologie ?</p><p>activité sur les carottes et le langage</p><p>Plusieurs propositions :</p><ul>
+<li>un numero centré sur IA</li>
+<li>ou un un ISO 2 avec des thèmes phares :
+<ul>
+<li>Apprentissage (ou IA),</li>
+<li>Crypto/ Block chain</li>
+<li>syteme distribué et parallelisme (tri sistolique, comptage parallele, robot lumineux),</li>
+<li>robotique (Robocoop de Gaëlle Thomas) &gt; avec IA ?non non, chaque membre de l’équipe est un composant du robot,<br>
+cf. Pour visionner l’enregistrement, suivez le lien ci-dessous :</li>
+</ul>
+</li>
+</ul><p><a href="http://scalelite.univ-grenoble-alpes.fr/playback/presentation/2.0/playback.html?meetingId=9cdae66bdeef0898654e9b55a797e711fe35717d-1591346152401" target="_blank" rel="noopener">http://scalelite.univ-grenoble-alpes.fr/playback/presentation/2.0/playback.html?meetingId=9cdae66bdeef0898654e9b55a797e711fe35717d-1591346152401</a></p><p>Jean Marc relance Martine de Tangente pour discuter avec elle de ce que tangente voudrait.</p><h2 id="Timeline-informatique"><a class="anchor hidden-xs" href="#Timeline-informatique" title="Timeline-informatique"><i class="fa fa-link"></i></a>Timeline informatique</h2><p>Romuald Thion en a fait une :<br>
+<a href="https://perso.liris.cnrs.fr/romuald.thion/files/Communication/Timeline/" target="_blank" rel="noopener">https://perso.liris.cnrs.fr/romuald.thion/files/Communication/Timeline/</a></p><p>Voir avec lui pour les droits : <a href="mailto:romuald.thion@liris.cnrs.fr" target="_blank" rel="noopener">romuald.thion@liris.cnrs.fr</a><br>
+Remarque après coup de Nathalie : cela manque de femmes, et les dates ne sont pas encourageantes : 1840 et 1950, il n’y en a pas eu après ?<br>
+Autre remarque de la même, qui n’est pas une joueuse : j’avais l’impression de connaître raisonnablement l’histoire de l’informatique, mais ici je suis perdue dès qu’une carte cause de jeu vidéo… ce qui est fréquent dans ce choix de cartes. Autre façon de l’exprimer : ce n’est pas ma vision de l’histoire de l’informatique, la mienne comporte BEAUCOUP moins de jeux vidéo.</p><h2 id="Vidéos-informatique-sur-les-4-piliers-de-l’informatique-par-la-société-de-Fred-Courant"><a class="anchor hidden-xs" href="#Vidéos-informatique-sur-les-4-piliers-de-l’informatique-par-la-société-de-Fred-Courant" title="Vidéos-informatique-sur-les-4-piliers-de-l’informatique-par-la-société-de-Fred-Courant"><i class="fa fa-link"></i></a>Vidéos informatique sur les 4 piliers de l’informatique, par la société de Fred Courant</h2><p>Voir avec Marie pour la projection des 2 jamais vus lors du congrès de la SIF<br>
+Livret qui accompagne chaque vidéo : à destination des enseignant·e·s de collège et début de lycées</p><h2 id="CryptoVisuelle"><a class="anchor hidden-xs" href="#CryptoVisuelle" title="CryptoVisuelle"><i class="fa fa-link"></i></a>CryptoVisuelle</h2><p><a href="https://sancy.iut.uca.fr/~lafourcade/Cryptovisuelle/" target="_blank" rel="noopener">https://sancy.iut.uca.fr/~lafourcade/Cryptovisuelle/</a><br>
+Marie nous raconte la science qu’elle explique aux parents pendant que leurs enfants dessinent de la crypto visuelle : clé totalement sans information à l’intérieur, sûreté inconditionnelle, existence de plusieurs messages qui correspondent à la même “clé” mais perte de sécurité si on envoie plusieurs messages utilisant cette même clé. C’est d’ailleurs pour cela que cela s’appelle du “one-time pad”, on n’est pas supposé utiliser plusieurs fois la clé.</p><h2 id="La-marelle-de-Turing"><a class="anchor hidden-xs" href="#La-marelle-de-Turing" title="La-marelle-de-Turing"><i class="fa fa-link"></i></a>La marelle de Turing</h2><p>cf. <a href="https://mmi-lyon.fr/?site_ressource_peda=la-marelle-de-turing" target="_blank" rel="noopener">https://mmi-lyon.fr/?site_ressource_peda=la-marelle-de-turing</a><br>
+discussion sur ce que l’on peut expliquer, aux enfants selon leur âge<br>
+lien avec le robot idiot : comment faire participer toute une classe, travail en sous-groupes qui se lancent des défis (et ces défis sont annotés en terme de difficulté), notion de fonction (= une enveloppe qui contient la séquence d’instructions correspondantes).<br>
+Discussion sur la “rémunération” des intervenant·e·s : 3h dans leur service tous les 15 jours pour intervenir en classe ou autres façons de compter, ou non (bénévolat)</p><h2 id="Injection-de-fautes"><a class="anchor hidden-xs" href="#Injection-de-fautes" title="Injection-de-fautes"><i class="fa fa-link"></i></a>Injection de fautes</h2><p>thème crypto, niveau lycée voire 3e</p><p>chiffrage affine, avec des injections d’erreur toujours au même endroit (et plusieurs couples “clair-chiffré”)</p><p>Discussion sur la pertinence d’injecter une faute pour trouver la clé, puisque dans cet exemple on peut trouver la clé sans faute (puisqu’on peut obtenir autant de couples “clair-chiffré” que l’on veut).<br>
+Elsa propose une analogie avec la cuisine : par exemple on remplace la farine par du sucre, si le goût à la fin est différent c’est que la recette comporte de la farine.</p><h2 id="Divers"><a class="anchor hidden-xs" href="#Divers" title="Divers"><i class="fa fa-link"></i></a>Divers</h2><p>Marie nous fait de la pub pour “Avent of Code” qui démarre demain : <a href="https://adventofcode.com" target="_blank" rel="noopener">https://adventofcode.com</a></p><p>Gemmes-o-logique : jeu de logique avec des pierres (mais il semble ne plus être édité ;-(( )</p><p><a href="https://www.smartgames.eu/fr/jeux-pour-1-joueur/gemmes-o-logique" target="_blank" rel="noopener">https://www.smartgames.eu/fr/jeux-pour-1-joueur/gemmes-o-logique</a></p><p>Cryptide</p><p><a href="https://www.espritjeu.com/jeux-de-societe/cryptide-origames.html" target="_blank" rel="noopener">https://www.espritjeu.com/jeux-de-societe/cryptide-origames.html</a></p><p>Jeu de lettres en ligne :</p><p><a href="http://7par7.net/" target="_blank" rel="noopener">http://7par7.net/</a><br>
+semantix<br>
+pedantix et pedantle</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Journée-InfoSansOrdi-Lyon-30-novembre-2022" title="Journée InfoSansOrdi Lyon 30 novembre 2022">Journée InfoSansOrdi Lyon 30 novembre 2022</a><ul class="nav">
+<li class=""><a href="#Tour-de-table" title="Tour de table">Tour de table</a></li>
+<li class=""><a href="#Marie---Magimatique" title="Marie - Magimatique">Marie - Magimatique</a><ul class="nav">
+<li class=""><a href="#Tour-1" title="Tour 1">Tour 1</a></li>
+<li class=""><a href="#Tour-2" title="Tour 2">Tour 2</a></li>
+</ul>
+</li>
+<li class=""><a href="#MMI-Connecte-tes-neurones" title="MMI Connecte tes neurones">MMI Connecte tes neurones</a></li>
+<li><a href="#Robots-lumineux" title="Robots lumineux">Robots lumineux</a></li>
+<li class=""><a href="#Infos-diverses" title="Infos diverses">Infos diverses</a></li>
+<li class=""><a href="#Publications-des-productions-ISO-" title="Publications des productions ISO ?">Publications des productions ISO ?</a></li>
+<li class=""><a href="#Timeline-informatique" title="Timeline informatique">Timeline informatique</a></li>
+<li class=""><a href="#Vidéos-informatique-sur-les-4-piliers-de-l’informatique-par-la-société-de-Fred-Courant" title="Vidéos informatique sur les 4 piliers de l’informatique, par la société de Fred Courant">Vidéos informatique sur les 4 piliers de l’informatique, par la société de Fred Courant</a></li>
+<li><a href="#CryptoVisuelle" title="CryptoVisuelle">CryptoVisuelle</a></li>
+<li class=""><a href="#La-marelle-de-Turing" title="La marelle de Turing">La marelle de Turing</a></li>
+<li class=""><a href="#Injection-de-fautes" title="Injection de fautes">Injection de fautes</a></li>
+<li><a href="#Divers" title="Divers">Divers</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu" style="">
+    <a class="expand-toggle expand-all" href="#">Expand all</a>
+    <a class="expand-toggle collapse-all" href="#" style="display: none;">Collapse all</a>
+    <a class="back-to-top" href="#">Back to top</a>
+    <a class="go-to-bottom" href="#">Go to bottom</a>
+</div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Journée-InfoSansOrdi-Lyon-30-novembre-2022" title="Journée InfoSansOrdi Lyon 30 novembre 2022">Journée InfoSansOrdi Lyon 30 novembre 2022</a><ul class="nav">
+<li class=""><a href="#Tour-de-table" title="Tour de table">Tour de table</a></li>
+<li class=""><a href="#Marie---Magimatique" title="Marie - Magimatique">Marie - Magimatique</a><ul class="nav">
+<li class=""><a href="#Tour-1" title="Tour 1">Tour 1</a></li>
+<li class=""><a href="#Tour-2" title="Tour 2">Tour 2</a></li>
+</ul>
+</li>
+<li class=""><a href="#MMI-Connecte-tes-neurones" title="MMI Connecte tes neurones">MMI Connecte tes neurones</a></li>
+<li><a href="#Robots-lumineux" title="Robots lumineux">Robots lumineux</a></li>
+<li class=""><a href="#Infos-diverses" title="Infos diverses">Infos diverses</a></li>
+<li class=""><a href="#Publications-des-productions-ISO-" title="Publications des productions ISO ?">Publications des productions ISO ?</a></li>
+<li class=""><a href="#Timeline-informatique" title="Timeline informatique">Timeline informatique</a></li>
+<li class=""><a href="#Vidéos-informatique-sur-les-4-piliers-de-l’informatique-par-la-société-de-Fred-Courant" title="Vidéos informatique sur les 4 piliers de l’informatique, par la société de Fred Courant">Vidéos informatique sur les 4 piliers de l’informatique, par la société de Fred Courant</a></li>
+<li><a href="#CryptoVisuelle" title="CryptoVisuelle">CryptoVisuelle</a></li>
+<li class=""><a href="#La-marelle-de-Turing" title="La marelle de Turing">La marelle de Turing</a></li>
+<li class=""><a href="#Injection-de-fautes" title="Injection de fautes">Injection de fautes</a></li>
+<li><a href="#Divers" title="Divers">Divers</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu" style="">
+    <a class="expand-toggle expand-all" href="#">Expand all</a>
+    <a class="expand-toggle collapse-all" href="#" style="display: none;">Collapse all</a>
+    <a class="back-to-top" href="#">Back to top</a>
+    <a class="go-to-bottom" href="#">Go to bottom</a>
+</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
