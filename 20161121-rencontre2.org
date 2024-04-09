@@ -215,7 +215,7 @@ Jeu (application mobile) pour apprendre à manipuler des variables.
 * Cargo Bot (par Benjamin Wack)
 - Démonstration filmée de l'activité de CargoBot, vidéo à venir sur le
   site de la MMI
-- Version débranchée de http://www-verimag.imag.fr/~wack/CargoBot/
+- Version débranchée de http://www-verimag.imag.fr/~wackb/CargoBot/
 - Discussion sur le test d'arrêt : boucle infinie, il faut que
   l'équipe de programmeurs arrête celui ou celle qui exécute le
   programme quand l'objectif est atteint (il n'est pas possible
